@@ -1,0 +1,45 @@
+@import "variables";
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family:cursive;
+}
+.img-index{
+    width: 40%;
+    
+} 
+
+
+ 
+.bg-color{
+    background-color: rgb(70, 101, 151);
+}
+.bg-color2{
+    background-color: rgb(70, 101, 151);
+} 
+.bg-color3{
+    background-color: rgb(70, 101, 151);
+} 
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+   
+
+@mixin  prop ($ancho,$alto,$colorLetra) {
+        width: $ancho;
+        height: $alto;
+        color: $colorLetra;    
+}
+
+.btn{
+    padding: map-get($btn,padding );
+    border:map-get($btn,bordes ); 
+    border-radius: map-get($btn,radio );
+    @include prop(15px,auto ,rgb(10, 28, 120) )
+
+
+    
+} 
+
